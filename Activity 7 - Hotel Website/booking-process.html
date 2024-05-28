@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staycation Hotel Website</title>
+    <link rel="stylesheet" href="assets/css/booking-process.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-main-ul">
+          <li>
+            <a href="#">
+              <div class="logo">
+                <p class="logo-colored">Stay</p>
+                <p class="logo-noncolored">cation</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+    <main>
+
+      <section class="sect-booking">
+        
+      <div class="progress-bar">
+        <div class="step">
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+
+      <div class="form-outer" id="payment">
+        <form action="#">
+          <div class="page slidePage">
+            <h2>Booking Information</h2>
+            <p class="p-grey">Please fill up the blank fields below</p>
+            <div class="container-detail">
+              <ul class="ul-info-detail">
+                <li>
+                  <div class="booking-img-div">
+                    <img src="assets/images/booking-img.png" alt="" />
+                  </div>
+                  <ul class="ul-selected-detail">
+                    <li>
+                      <p class="p-title">Podo Wae</p>
+                      <p class="p-location">Madiun, Indonesia</p>
+                    </li>
+                    <li><span class="label">$480 USD</span> <span class="p-grey">per</span> <span class="label">2 nights</span></li>
+                  </ul>
+                </li>
+                <li>
+                  <ul class="ul-input-fields">
+                    <li>
+                      <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text" class="f-field1" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="field">
+                        <div class="label">Last Name</div>
+                        <input type="text" class="f-field2" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="field">
+                        <div class="label">Email Address</div>
+                        <input type="text" class="f-field3" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="field">
+                        <div class="label">Phone Number</div>
+                        <input type="number" class="f-field4" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="buttons">
+                <div class="field">
+                  <a href="#payment"><button type="button" class="show-me-now next-1 next nextBtn display">Continue to Book</button></a>
+                </div>
+                <div class="field">
+                  <button class="cancel-me-now prev-1 prev">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page slidePage" id="complete">
+            <h2>Payment</h2>
+            <p class="p-grey">Kindly follow the instructions below</p>
+            <div class="container-detail">
+              <ul class="ul-info-detail payment">
+                <li>
+                  <p class="p-heading-1">Transfer Payment:</p>
+                  <p class="line-height">Tax: <span class="p-bold">10%</span></p>
+                  <p class="line-height">Sub total: <span class="p-bold">$480 USD</span></p>
+                  <p class="line-height">Total: <span class="p-bold">$580 USD</span></p>
+                  <div class="bank-list">
+                    <div>
+                      <img src="assets/images/payment-1.png" alt="" />
+                    </div>
+                    <div>
+                      <p>Bank Central Asia</p>
+                      <p>2208 1996</p>
+                      <p>BuildWith Angga</p>
+                    </div>
+                  </div>
+                  <div class="bank-list">
+                    <div class="blank-list">
+                      <img src="assets/images/payment-2.png" alt="" />
+                    </div>
+                    <div>
+                      <p>Bank Mandiri</p>
+                      <p>2208 1996</p>
+                      <p>BuildWith Angga</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <ul>
+                    <li>
+                      <div class="field">
+                        <div class="label">Upload Proof Transfer</div>
+                        <input type="file" class="f-field5"/>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="field">
+                        <div class="label">From the bank</div>
+                        <input type="text" class="f-field6" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="field">
+                        <div class="label">Name of Sender</div>
+                        <input type="text" class="f-field7" placeholder="Please type here..."/>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="buttons">
+                <div class="field">
+                  <a href="#complete"><button type="button" class="show-me-now nextBtn2 display2">Continue to Book</button></a>
+                </div>
+                <div class="field">
+                  <button class="cancel-me-now">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page slidePage">
+            <h2>Yay! Completed</h2>
+            <div class="container-detail">
+              <div>
+                <img src="assets/images/payment-complete.png" alt="" />
+              </div>
+              <p>
+                We will inform you via email later <br />
+                once the transaction has been accepted
+              </p>
+              <div class="buttons">
+                <div class="field completed">
+                  <a href="index.html"><button type="button" class="show-me-now">Back to Home</button></a>
+                </div>
+              </div>
+          </div>
+        </form>
+      </div>
+
+    </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="assets/js/booking-process.js"></script>
+  </body>
+</html>
