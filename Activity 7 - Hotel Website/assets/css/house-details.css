@@ -544,3 +544,540 @@ footer {
 .show-me-now:hover {
   background-color: #0b2dc4;
 }
+
+/* ************************ HAMBURGER MENU************************* */
+
+.navbar:nth-child(3) {
+  text-align: right;
+}
+
+.nav-link {
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 5.814vw;
+  height: 0.698vw;
+  margin: 1.163vw auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.hamburger .active {
+  background-color: black;
+}
+
+/* add only if a few links available */
+/* For Hamburger Menu Unscrollable body */
+.fixed_body {
+  overflow: hidden;
+  block-size: 100%;
+}
+
+/* *************************************************************************
+                         Responsive: TABLET 
+************************************************************************* */
+
+@media screen and (max-width: 768px) {
+  /* Tablet: Nav section */
+
+  .logo {
+    font-size: 3.914vw;
+  }
+
+  .nav-link {
+    font-size: 2.384vw;
+  }
+
+  /* Tablet: Header section */
+
+  .ul-title {
+    font-size: 2.314vw;
+  }
+
+  .ul-title li:nth-child(1) {
+    width: 40%;
+  }
+
+  h2 {
+    font-size: 4.112vw;
+    font-weight: 800;
+    color: #152c5b;
+  }
+
+  /* Tablet: About Section */
+
+  .p-heading1 {
+    font-size: 2.812vw;
+  }
+
+  .ul-about {
+    font-size: 1.954vw;
+  }
+
+  .ul-amenities {
+    gap: 5px;
+  }
+
+  .picked-date > input {
+    font-size: 1.954vw;
+  }
+
+  .div-total {
+    flex-wrap: wrap;
+  }
+
+  .btn-book-now {
+    height: 4.586vw;
+    font-size: 2.514vw;
+  }
+
+  /* Tablet: Treasure to Choose Section */
+
+  .ul-cat1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat1-div {
+    width: 40.497vw;
+  }
+
+  .text-name-cat {
+    font-size: 2.614vw;
+  }
+
+  .text-detail-cat {
+    font-size: 2.314vw;
+  }
+
+  .main-price {
+    font-size: 2.314vw;
+    height: 4.512vw;
+  }
+
+  /* Tablet: Testimonial Section */
+
+  .pt-heading {
+    font-size: 2.612vw;
+  }
+
+  .ul-stars li {
+    width: 8%;
+  }
+
+  .pt-text {
+    font-size: 3.713vw;
+    color: #152c5b;
+  }
+
+  .pt-by {
+    font-size: 2.612vw;
+  }
+
+  .div-testi-img {
+    height: 40.333vw;
+  }
+
+  .show-me-now {
+    font-size: 2.214vw;
+    width: 85%;
+    height: 4.186vw;
+  }
+
+  /* Tablet: Footer Section */
+
+  .ul-footer {
+    flex-wrap: wrap;
+    font-size: 2.214vw;
+  }
+
+  .footer-title {
+    justify-content: center;
+  }
+
+  .ul-footer li {
+    width: 33%;
+  }
+
+  .ul-footer > li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .footer-title.this {
+    font-size: 2.314vw;
+  }
+
+  .copyright {
+    font-size: 2.314vw;
+  }
+}
+
+/* *************************************************************************
+                         Responsive: MOBILE 
+************************************************************************* */
+
+@media screen and (max-width: 430px) {
+  .hamburger {
+    display: block;
+    align-content: center;
+    /* changed::::: */
+    position: absolute;
+    right: 5.389vw;
+    top: 2.126vw;
+    z-index: 3;
+  }
+
+  .hamburger.active .bar {
+    background-color: gray;
+  }
+
+  /* TABLET: Hamburger animation */
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* TABLET: Hides the nav links upon click */
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    position: fixed;
+    height: 110vh;
+    margin: 0;
+    right: -100%;
+    top: -12px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  .nav-item {
+    margin: 16px;
+    justify-content: left;
+    width: 75%;
+    border-bottom: 1px solid #fce7e3;
+  }
+
+  .nav-link {
+    color: #566251;
+    font-size: 20px;
+  }
+
+  .nav-item:nth-child(1) {
+    padding-top: 80px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu div {
+    width: 100%;
+  }
+
+  /* TABLET: Extra utility classes to be added with JS */
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  #hamburger.toggle div {
+    background-color: white;
+  }
+
+  .toggle #bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+
+  .toggle #bar2 {
+    opacity: 0;
+  }
+
+  .toggle #bar3 {
+    transform: rotate(45deg) translate(-5px, -4px);
+  }
+
+  /* END: HAMBURGER MENU */
+
+  /* Mobile: Nav Menu */
+
+  .sect-header {
+    margin-top: 10%;
+  }
+
+  .logo {
+    font-size: 5.914vw;
+  }
+
+  /* Mobile: Header Title */
+
+  .ul-title {
+    display: grid;
+    font-size: 3.314vw;
+  }
+
+  .ul-title li:nth-child(1) {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    font-size: 6.112vw;
+  }
+
+  .ul-house-img {
+    display: grid;
+  }
+
+  .main-img {
+    width: 100%;
+    height: 40.312vw;
+  }
+
+  .main-img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ul-house-img-side {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.188vw;
+  }
+
+  .sub-img {
+    width: 100%;
+  }
+
+  .sub-img img {
+    height: 40.312vw;
+    border-radius: 15px;
+  }
+
+  /* Mobile: About Section */
+
+  .ul-about {
+    display: grid;
+    font-size: 3.314vw;
+  }
+
+  .ul-about > li:nth-child(1) {
+    width: 100%;
+    text-align: justify;
+    padding-right: 0;
+  }
+
+  .p-heading1 {
+    font-size: 4.812vw;
+  }
+
+  .amenities-ico {
+    width: 6.512vw;
+  }
+
+  .ul-about > li:nth-child(2) {
+    margin: 15% 0;
+    width: 100%;
+  }
+
+  .div-price {
+    font-size: 5.5vw;
+  }
+
+  .minus {
+    height: 7.125vw;
+    width: 7.125vw;
+    font-size: 5.083vw;
+  }
+
+  .plus {
+    height: 7.125vw;
+    width: 7.125vw;
+    font-size: 5.083vw;
+  }
+
+  .nights {
+    background-color: #f5f6f8;
+    height: 7.125vw;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    color: #152c5b;
+  }
+
+  .div-d-picker {
+    width: 7.213vw;
+  }
+
+  .div-d-picker img {
+    height: 7.531vw;
+  }
+
+  .picked-date > input {
+    width: 100%;
+    height: 7.531vw;
+    font-size: 3.314vw;
+  }
+
+  .picked-date {
+    width: 100%;
+  }
+
+  .btn-book-now {
+    font-size: 4.214vw;
+    height: 7.186vw;
+  }
+
+  /* Mobile: Category Sections */
+
+  .sub-picked {
+    height: 35.914vw;
+  }
+
+  .ul-cat1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ul-cat1 li {
+    width: 100%;
+  }
+
+  .cat1-div {
+    width: 100%;
+  }
+
+  .cat1-div img {
+    width: 100%;
+    height: 35.914vw;
+  }
+
+  .text-name-cat {
+    font-size: 4.614vw;
+  }
+
+  .text-detail-cat {
+    font-size: 4.314vw;
+  }
+
+  .main-price {
+    font-size: 4.314vw;
+    height: 6.512vw;
+  }
+
+  /* Mobile: Testimonial Section */
+
+  .sect-testimonial {
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .pt-heading {
+    font-size: 4.612vw;
+  }
+
+  .ul-stars li {
+    width: 10%;
+  }
+
+  .pt-text {
+    font-size: 5.713vw;
+    color: #152c5b;
+  }
+
+  .pt-by {
+    font-size: 4.612vw;
+  }
+
+  .ul-testi-main {
+    display: grid;
+  }
+
+  .testi-img {
+    position: static;
+  }
+
+  .ul-testi-main > li:nth-child(1) {
+    width: 100%;
+  }
+
+  .div-testi-img {
+    height: 75.333vw;
+    width: 100%;
+  }
+
+  .div-testi-img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .ul-stars li {
+    width: 10%;
+  }
+
+  .ul-testi-main > li:nth-child(2) {
+    padding-top: 15%;
+    width: 100%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show-me-now {
+    font-size: 4.214vw;
+    width: 100%;
+    height: 7.186vw;
+  }
+
+  /* Mobile: Footer Section */
+
+  .ul-footer {
+    display: grid;
+    font-size: 4.214vw;
+    text-align: center;
+  }
+
+  .ul-footer > li {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+
+  .footer-title.this {
+    font-size: 4.314vw;
+  }
+  .copyright {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 4.314vw;
+  }
+
+  .ul-footer li:nth-child(1) {
+    padding-right: 0;
+  }
+}

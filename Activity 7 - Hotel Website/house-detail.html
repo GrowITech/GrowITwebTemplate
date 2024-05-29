@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/house-details.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
-      <nav>
+      <nav class="navbar">
         <ul class="nav-main-ul">
           <li>
             <a href="#">
@@ -20,14 +20,22 @@
             </a>
           </li>
           <li>
-            <ul class="nav-sub-ul">
-              <li><a class="nav-link" href="#">Home</a></li>
-              <li><a class="nav-link" href="#">Browse by</a></li>
-              <li><a class="nav-link" href="#">Stories</a></li>
-              <li><a class="nav-link" href="#">Agents</a></li>
+            <ul class="nav-sub-ul nav-menu">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Browse by</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Agents</a></li>
             </ul>
           </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <hr />
@@ -275,7 +283,7 @@
           <li>
             <div class="div-testi-img">
               <img
-                class="testi-frame"
+                class="testi-frame hide"
                 src="assets/images/testimonial-frame.png"
                 alt=""
               />
