@@ -159,7 +159,7 @@ h1 {
 .h-img-container img {
   width: 90%;
   height: auto;
-  z-index: 2;
+  z-index: 1;
   position: absolute;
 }
 
@@ -204,6 +204,7 @@ h1 {
 .main-picked img {
   width: 100%;
   height: 32.914vw;
+  border-radius: 15px;
 }
 
 .main-price {
@@ -248,6 +249,7 @@ h1 {
 .sub-picked img {
   width: 100%;
   height: 15.714vw;
+  border-radius: 15px;
 }
 
 /* START: Beauty backyard Cat Section */
@@ -320,13 +322,17 @@ h1 {
 .div-testi-img {
   position: relative;
   width: 25.312vw;
+  height: 33.333vw;
 }
 
 .div-testi-img img {
   width: 100%;
+  height: 100%;
 }
 
 .testi-img {
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 3.312vw;
   left: 3.312vw;
@@ -415,4 +421,506 @@ footer {
   text-align: center;
   padding-left: 8%;
   margin-top: 3%;
+}
+
+/* ************************ HAMBURGER MENU************************* */
+
+.navbar:nth-child(3) {
+  text-align: right;
+}
+
+.nav-link {
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 5.814vw;
+  height: 0.698vw;
+  margin: 1.163vw auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+.hamburger .active {
+  background-color: black;
+}
+
+/* add only if a few links available */
+/* For Hamburger Menu Unscrollable body */
+.fixed_body {
+  overflow: hidden;
+  block-size: 100%;
+}
+
+/* *************************************************************************
+                         Responsive: TABLET 
+************************************************************************* */
+@media screen and (max-width: 768px) {
+  /* Tablet: Nav section */
+
+  .logo {
+    font-size: 3.914vw;
+  }
+
+  .nav-link {
+    font-size: 2.384vw;
+  }
+
+  /* Tablet: Header section */
+
+  h1 {
+    font-size: 3.812vw;
+  }
+
+  .header-text {
+    font-size: 1.914vw;
+  }
+
+  .show-me-now {
+    font-size: 2.214vw;
+    width: 85%;
+    height: 4.186vw;
+  }
+
+  .info-img {
+    width: 3.8vw;
+  }
+
+  .info-detail {
+    font-size: 1.714vw;
+  }
+
+  .h-img-container img {
+    height: 39.063vw;
+  }
+
+  .h-img-bg {
+    top: 2rem;
+  }
+
+  /* Tablet: Most Picked Section */
+
+  .p-heading1 {
+    font-size: 2.612vw;
+  }
+
+  .ul-most-picked {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-picked {
+    width: 100%;
+  }
+
+  .sub-picked {
+    height: 23.438vw;
+  }
+
+  .sub-picked > img {
+    height: 100%;
+  }
+
+  .text-name {
+    font-size: 2.614vw;
+  }
+
+  .text-loc {
+    font-size: 2.314vw;
+  }
+
+  .main-price {
+    font-size: 2.314vw;
+    height: 4.512vw;
+  }
+
+  /* Tablet: Each Categories Section */
+
+  .ul-cat1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat1-div {
+    width: 40.497vw;
+  }
+
+  .text-name-cat {
+    font-size: 2.614vw;
+  }
+
+  .text-detail-cat {
+    font-size: 2.314vw;
+  }
+
+  /* Tablet: Testimonial Section */
+
+  .pt-heading {
+    font-size: 2.612vw;
+  }
+
+  .ul-stars li {
+    width: 8%;
+  }
+
+  .pt-text {
+    font-size: 3.713vw;
+    color: #152c5b;
+  }
+
+  .pt-by {
+    font-size: 2.612vw;
+  }
+
+  .div-testi-img {
+    height: 40.333vw;
+  }
+
+  /* Tablet: Footer Section */
+
+  .ul-footer {
+    flex-wrap: wrap;
+    font-size: 2.214vw;
+  }
+
+  .footer-title {
+    justify-content: center;
+  }
+
+  .ul-footer li {
+    width: 33%;
+  }
+
+  .ul-footer > li:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  .footer-title.this {
+    font-size: 2.314vw;
+  }
+
+  .copyright {
+    font-size: 2.314vw;
+  }
+}
+
+/* *************************************************************************
+                         Responsive: MOBILE 
+************************************************************************* */
+
+@media screen and (max-width: 430px) {
+  .hamburger {
+    display: block;
+    align-content: center;
+    /* changed::::: */
+    position: absolute;
+    right: 5.389vw;
+    top: 2.126vw;
+    z-index: 3;
+  }
+
+  .hamburger.active .bar {
+    background-color: gray;
+  }
+
+  /* TABLET: Hamburger animation */
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* TABLET: Hides the nav links upon click */
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    position: fixed;
+    height: 110vh;
+    margin: 0;
+    right: -100%;
+    top: -12px;
+    gap: 0;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  .nav-item {
+    margin: 16px;
+    justify-content: left;
+    width: 75%;
+    border-bottom: 1px solid #fce7e3;
+  }
+
+  .nav-link {
+    color: #566251;
+    font-size: 20px;
+  }
+
+  .nav-item:nth-child(1) {
+    padding-top: 80px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu div {
+    width: 100%;
+  }
+
+  /* TABLET: Extra utility classes to be added with JS */
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  #hamburger.toggle div {
+    background-color: white;
+  }
+
+  .toggle #bar1 {
+    transform: rotate(-45deg) translate(-5px, 4px);
+  }
+
+  .toggle #bar2 {
+    opacity: 0;
+  }
+
+  .toggle #bar3 {
+    transform: rotate(45deg) translate(-5px, -4px);
+  }
+
+  /* END: HAMBURGER MENU */
+
+  /* Mobile: Nav Menu */
+
+  .sect-header {
+    margin-top: 10%;
+  }
+
+  .logo {
+    font-size: 5.914vw;
+  }
+
+  .header-mobile-div {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .header-mobile-div {
+    text-align: -webkit-center;
+  }
+
+  .ul-header-main {
+    flex-wrap: wrap;
+    counter-reset: item 2;
+    flex-direction: column-reverse;
+  }
+
+  .ul-header-main > li {
+    width: 100%;
+  }
+
+  .ul-header-main > li:nth-child(1) {
+    text-align: -webkit-center;
+  }
+
+  .ul-header-info {
+    width: 100%;
+  }
+
+  .h-img-container img {
+    position: static;
+    width: 100%;
+    height: 75.333vw;
+  }
+
+  h1 {
+    font-size: 5.812vw;
+  }
+
+  .header-text {
+    font-size: 3.914vw;
+  }
+
+  .show-me-now {
+    font-size: 4.214vw;
+    width: 100%;
+    height: 7.186vw;
+  }
+
+  .info-img {
+    width: 6.8vw;
+  }
+
+  .info-detail {
+    font-size: 3.714vw;
+  }
+
+  /* Mobile: Most Picked Section */
+
+  .p-heading1 {
+    font-size: 4.612vw;
+    margin-top: 20%;
+  }
+
+  .text-name {
+    font-size: 5.614vw;
+  }
+
+  .text-loc {
+    font-size: 4.314vw;
+  }
+
+  .main-price {
+    font-size: 4.314vw;
+    height: 6.512vw;
+  }
+
+  .inner-ul-picked {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.986vw;
+  }
+
+  .main-picked img {
+    height: 35.914vw;
+  }
+
+  /* Mobile: Category Sections */
+
+  .sub-picked {
+    height: 35.914vw;
+  }
+
+  .ul-cat1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ul-cat1 li {
+    width: 100%;
+  }
+
+  .cat1-div {
+    width: 100%;
+  }
+
+  .cat1-div img {
+    width: 100%;
+    height: 35.914vw;
+  }
+
+  .text-name-cat {
+    font-size: 4.614vw;
+  }
+
+  .text-detail-cat {
+    font-size: 4.314vw;
+  }
+
+  /* Mobile: Testimonial Section */
+
+  .sect-testimonial {
+    margin-top: 20%;
+    margin-bottom: 15%;
+  }
+
+  .pt-heading {
+    font-size: 4.612vw;
+  }
+
+  .ul-stars li {
+    width: 10%;
+  }
+
+  .pt-text {
+    font-size: 5.713vw;
+    color: #152c5b;
+  }
+
+  .pt-by {
+    font-size: 4.612vw;
+  }
+
+  .ul-testi-main {
+    display: grid;
+  }
+
+  .testi-img {
+    position: static;
+  }
+
+  .ul-testi-main > li:nth-child(1) {
+    width: 100%;
+  }
+
+  .div-testi-img {
+    height: 75.333vw;
+    width: 100%;
+  }
+
+  .ul-stars li {
+    width: 10%;
+  }
+
+  .ul-testi-main > li:nth-child(2) {
+    padding-top: 15%;
+    width: 100%;
+  }
+
+  /* Mobile: Footer Section */
+
+  .ul-footer {
+    display: grid;
+    font-size: 4.214vw;
+    text-align: center;
+  }
+
+  .ul-footer > li {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+
+  .footer-title.this {
+    font-size: 4.314vw;
+  }
+
+  .copyright {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 4.314vw;
+  }
+
+  .ul-footer li:nth-child(1) {
+    padding-right: 0;
+  }
 }

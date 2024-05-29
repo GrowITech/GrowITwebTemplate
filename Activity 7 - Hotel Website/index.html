@@ -6,9 +6,9 @@
     <title>Staycation Hotel Website</title>
     <link rel="stylesheet" href="assets/css/homepage.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
-      <nav>
+      <nav class="navbar">
         <ul class="nav-main-ul">
           <li>
             <a href="#">
@@ -19,14 +19,22 @@
             </a>
           </li>
           <li>
-            <ul class="nav-sub-ul">
-              <li><a class="nav-link" href="#">Home</a></li>
-              <li><a class="nav-link" href="#">Browse by</a></li>
-              <li><a class="nav-link" href="#">Stories</a></li>
-              <li><a class="nav-link" href="#">Agents</a></li>
+            <ul class="nav-sub-ul nav-menu">
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Browse by</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Stories</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Agents</a></li>
             </ul>
           </li>
         </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <hr />
@@ -35,7 +43,7 @@
       <section class="sect-header">
         <ul class="ul-header-main">
           <li>
-            <div>
+            <div class="header-mobile-div">
               <h1>Forget Busy Work, Start Next Vacation</h1>
               <p class="header-text">
                 We provide what you need to enjoy your holiday with family. Time
@@ -78,7 +86,7 @@
           <li>
             <div class="h-img-container">
               <img
-                class="h-img-bg"
+                class="h-img-bg hide"
                 src="assets/images/header-frame.png"
                 alt=""
               />
@@ -262,7 +270,7 @@
           <li>
             <div class="div-testi-img">
               <img
-                class="testi-frame"
+                class="testi-frame hide"
                 src="assets/images/testimonial-frame.png"
                 alt=""
               />
@@ -328,6 +336,8 @@
       <div class="copyright">
         <p>Copyright 2019 • All rights reserved • Staycation</p>
       </div>
+
+      <script src="assets/js/homepage.js"></script>
     </footer>
   </body>
 </html>

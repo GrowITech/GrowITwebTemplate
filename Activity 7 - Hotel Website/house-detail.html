@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Staycation Hotel Website</title>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/house-details.css" />
-    <link rel="stylesheet" href="assets/css/hotel-datepicker.css" />
   </head>
   <body>
     <header>
@@ -199,10 +199,18 @@
               <p class="p-blue-t">Pick a Date</p>
               <div class="date-picker">
                 <div class="div-d-picker">
-                  <img src="assets/images/ic_calendar.png" alt="" />
+                  <img
+                    id="datepicker"
+                    src="assets/images/ic_calendar.png"
+                    alt=""
+                  />
                 </div>
                 <div class="picked-date">
-                  <p>20 Jan - 22 Jan</p>
+                  <input
+                    type="text"
+                    id="popupDatepicker"
+                    placeholder="20 Jan - 22 Jan"
+                  />
                 </div>
               </div>
               <div class="div-total">
@@ -335,8 +343,8 @@
       </div>
     </footer>
 
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
     <script src="assets/js/house-detail.js"></script>
-    <script src="assets/js/fecha.js"></script>
-    <script src="assets/js/hotel-datepicker.min.js"></script>
   </body>
 </html>

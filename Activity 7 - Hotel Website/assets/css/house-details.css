@@ -360,14 +360,22 @@ footer {
 
 .div-d-picker img {
   width: 100%;
+  height: 2.531vw;
 }
 
 .picked-date {
+}
+
+.picked-date > input {
   width: 23.325vw;
+  height: 2.592vw;
   text-align: center;
   align-content: center;
   background-color: #f5f6f8;
   color: #152c5b;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.283vw;
 }
 
 .div-total {

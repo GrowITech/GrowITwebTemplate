@@ -36,3 +36,11 @@ document.querySelector(".decrement").addEventListener("click", function () {
     document.querySelector(".num-nights").innerText = "night";
   }
 });
+
+$(function () {
+  $("#popupDatepicker").datepicker();
+  $("#datepicker").click(function (e) {
+    var visible = $("#popupDatepicker").datepicker("widget").is(":visible");
+    $("#popupDatepicker").datepicker(visible ? "hide" : "show");
+  });
+});
