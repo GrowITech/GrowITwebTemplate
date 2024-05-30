@@ -378,3 +378,139 @@ input[type="number"]:focus {
 .display2 {
   display: none;
 }
+
+/* *************************************************************************
+                         Responsive: TABLET 
+************************************************************************* */
+
+@media screen and (max-width: 768px) {
+  .logo {
+    font-size: 3.914vw;
+  }
+
+  .progress-bar .step .bullet {
+    height: 6.472vw;
+    width: 6.472vw;
+  }
+
+  .progress-bar .step {
+    width: 25%;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    position: absolute;
+    content: "";
+    right: -13.708vw;
+    height: 0.208vw;
+    width: 13.708vw;
+    background: #898989;
+  }
+
+  .progress-bar .step .bullet span {
+    font-size: 2.667vw;
+  }
+
+  .ul-selected-detail {
+    display: grid;
+  }
+
+  .show-me-now {
+    width: 50%;
+  }
+
+  .cancel-me-now {
+    width: 50%;
+  }
+}
+
+/* *************************************************************************
+                         Responsive: MOBILE 
+************************************************************************* */
+
+@media screen and (max-width: 430px) {
+  .progress-bar .step .bullet {
+    height: 9.472vw;
+    width: 9.472vw;
+  }
+
+  .progress-bar .step {
+    width: 25%;
+  }
+
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    position: absolute;
+    content: "";
+    right: -10.708vw;
+    height: 0.208vw;
+    width: 10.708vw;
+    background: #898989;
+  }
+
+  .logo {
+    font-size: 5.914vw;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  .ul-info-detail {
+    display: grid;
+  }
+
+  .ul-info-detail > li:nth-child(1) {
+    padding-right: 100%;
+    border-right: none;
+    padding-right: 0;
+    margin-bottom: 15%;
+  }
+
+  .ul-info-detail > li {
+    width: 100%;
+  }
+
+  .booking-img-div {
+    width: 100%;
+  }
+
+  .booking-img-div img {
+    height: 50.542vw;
+    border-radius: 15px;
+  }
+
+  .ul-info-detail > li:nth-child(2) {
+    padding-left: 0;
+  }
+
+  .show-me-now {
+    width: 100%;
+  }
+
+  .cancel-me-now {
+    width: 100%;
+  }
+
+  input[type="file"],
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+  }
+
+  .ul-info-detail ul {
+    list-style: none;
+  }
+
+  .container-detail img {
+    width: 100%;
+  }
+
+  .form-outer form .page {
+    padding: 0 3%;
+  }
+
+  .payment {
+    margin: 0;
+  }
+}

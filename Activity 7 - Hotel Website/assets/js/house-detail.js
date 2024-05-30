@@ -38,7 +38,11 @@ document.querySelector(".decrement").addEventListener("click", function () {
 });
 
 $(function () {
-  $("#popupDatepicker").datepicker();
+  var range = $("#quantity2");
+  $("#popupDatepicker").datepicker({
+    minDate: 1,
+    showButtonPanel: true,
+  });
   $("#datepicker").click(function (e) {
     var visible = $("#popupDatepicker").datepicker("widget").is(":visible");
     $("#popupDatepicker").datepicker(visible ? "hide" : "show");
