@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 2% 8%;
+}
+
+a {
+  text-decoration: none;
+}
+
+section,
+footer {
+  margin: 0 8%;
+}
+
+/* START: Nav Menu  */
+
+.nav-main-ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.914vw;
+}
+
+.logo-colored {
+  color: #3252df;
+}
+
+.logo-noncolored {
+  color: #152c5b;
+}
+
+.nav-sub-ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #152c5b;
+  font-size: 1.484vw;
+  transition: all 0.7s;
+}
+
+.nav-link:hover {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+hr {
+  border-top: 1px solid #e5e5e5;
+}
+
+/* START: Footer section */
+
+.footer-hr {
+  margin-top: 8%;
+}
+
+footer {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.ul-footer {
+  display: flex;
+  list-style: none;
+  color: #b0b0b0;
+  font-size: 1.214vw;
+}
+
+.ul-footer a {
+  color: #b0b0b0;
+  transition: all 0.7s;
+}
+
+.ul-footer a:hover {
+  color: #152c5b;
+}
+
+.footer-title {
+  margin-bottom: 5%;
+}
+
+.footer-title.this {
+  font-size: 1.314vw;
+  color: #152c5b;
+}
+
+.ul-footer li {
+  width: 25%;
+}
+
+.ul-footer li:nth-child(1) {
+  width: 40%;
+  padding-right: 10%;
+}
+
+.copyright {
+  color: #b0b0b0;
+  font-size: 1.314vw;
+  text-align: center;
+  padding-left: 8%;
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 2.412vw;
+  font-weight: 800;
+  color: #152c5b;
+}
+
+/* ************MAIN SECTION************ */
+
+/* START: Title Section */
+
+.sect-title {
+  margin-top: 5%;
+}
+
+.ul-title {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #b0b0b0;
+  font-size: 1.314vw;
+}
+
+.ul-title li:nth-child(1) {
+  width: 35%;
+  display: flex;
+}
+
+.link-previous {
+  color: #b0b0b0;
+}
+
+.link-previous:hover {
+  color: #152c5b;
+  transition: all 0.6s;
+}
+
+.link-now {
+  color: #152c5b;
+}
+
+.title-content {
+  text-align: center;
+}
+
+/* START: Agents Section */
+
+.sect-agents {
+  margin-top: 5%;
+}
+
+.p-heading1 {
+  color: #152c5b;
+  font-weight: 600;
+  font-size: 1.612vw;
+  margin-bottom: 1%;
+}
+
+.ul-agents {
+  display: flex;
+  gap: 25px;
+}
+
+.ul-agents > li {
+  border: 1px solid #152c5b;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.agents-img {
+  width: 239px;
+  height: 255px;
+}

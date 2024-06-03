@@ -127,11 +127,20 @@ footer {
 
 /* START: Header Link */
 
-.sect-link-head {
+/* START: Title Section */
+
+.sect-title {
   margin-top: 5%;
-  display: flex;
-  font-size: 1.314vw;
+}
+
+.ul-title {
+  list-style: none;
   color: #b0b0b0;
+  font-size: 1.314vw;
+}
+
+.ul-title li:nth-child(1) {
+  display: flex;
 }
 
 .link-previous {
@@ -147,26 +156,36 @@ footer {
   color: #152c5b;
 }
 
-/* START: Header section */
-
-.ul-outer-feature {
-  margin-top: 3%;
-  display: flex;
-  gap: 5%;
+.link-previous {
+  color: #b0b0b0;
 }
 
-.ul-outer-feature > li {
-  width: 50%;
+.link-previous:hover {
+  color: #152c5b;
+  transition: all 0.6s;
 }
 
-.div-img-head {
-  width: 41.514vw;
+.link-now {
+  color: #152c5b;
 }
 
-.div-img-head img {
+/* START: Header img section */
+
+.sect-head-img img {
   width: 100%;
-  height: 27.778vw;
-  border-radius: 15px;
+  margin-top: 2%;
+  height: 38.194vw;
+}
+
+/* START: Story Details Section */
+
+.sect-story-detail {
+  margin-top: 3%;
+}
+
+.ul-story-detail {
+  display: flex;
+  gap: 10%;
 }
 
 .date-published {
@@ -221,23 +240,16 @@ footer {
   font-weight: 600;
 }
 
-/* START: More Stories Section */
-
-.sect-more-stories {
-  margin-top: 10%;
-  text-align: center;
+.div-full-detail {
+  margin-top: 3%;
+  font-size: 1.314vw;
+  color: #b0b0b0;
 }
 
-.ul-more-stories {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5%;
-  text-align: left;
-}
+/* START: LI More Stories  */
 
-.ul-more-stories > li {
-  width: 30%;
-  margin-bottom: 10%;
+.ul-more-stories li {
+  padding-bottom: 10%;
 }
 
 .date-published-more {
@@ -292,11 +304,16 @@ footer {
 }
 
 .div-cat-img img {
-  width: 100%;
+  width: 31.25vw;
+  height: 20.833vw;
 }
 
 .link-see-more {
   color: #152c5b;
+}
+
+.div-load-more {
+  text-align: center;
 }
 
 /* START: Load More Area */
@@ -304,7 +321,7 @@ footer {
 .show-me-now {
   background-color: #3252df;
   color: #fff;
-  width: 25%;
+  width: 70%;
   height: 3.586vw;
   border-radius: 5px;
   text-align: center;
@@ -359,7 +376,10 @@ footer {
 /* *************************************************************************
                          Responsive: TABLET 
 ************************************************************************* */
+
 @media screen and (max-width: 768px) {
+  /* Tablet: Nav section */
+
   .logo {
     font-size: 3.914vw;
   }
@@ -368,12 +388,16 @@ footer {
     font-size: 2.384vw;
   }
 
-  .sect-link-head {
+  /* Tablet: Header section */
+
+  .ul-title {
     font-size: 2.314vw;
   }
 
-  .ul-more-stories > li {
-    width: 47%;
+  /* Tablet: Story Details Section */
+
+  .ul-story-detail {
+    display: block;
   }
 
   .p-heading1 {
@@ -386,10 +410,6 @@ footer {
 
   .head-title {
     font-size: 3.112vw;
-  }
-
-  .div-description {
-    font-size: 1.954vw;
   }
 
   .author-name {
@@ -411,7 +431,26 @@ footer {
     height: 44.978vw;
   }
 
-  /* TABLET: More Related Stories Section */
+  .div-full-detail {
+    font-size: 1.954vw;
+  }
+
+  /* Tablet: More Related Stories Section */
+
+  .div-more-stories {
+    margin-top: 5%;
+  }
+
+  .ul-more-stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+
+  .div-cat-img img {
+    width: 39.25vw;
+    height: 20.833vw;
+  }
 
   .p-heading1-more {
     font-size: 2.812vw;
@@ -596,22 +635,10 @@ footer {
     font-size: 5.914vw;
   }
 
-  /* Mobile: Header Title */
+  /* Mobile: Header Link */
 
-  .sect-link-head {
+  .ul-title {
     font-size: 3.314vw;
-  }
-
-  .ul-outer-feature {
-    display: grid;
-  }
-
-  .ul-outer-feature > li {
-    width: 100%;
-  }
-
-  .div-img-head {
-    width: 100%;
   }
 
   .p-heading1 {
@@ -643,14 +670,27 @@ footer {
     height: 10.472vw;
   }
 
+  .div-full-detail {
+    font-size: 3.954vw;
+  }
+
   /* Mobile: More related stories section */
 
-  .sect-more-stories {
-    margin-top: 25%;
+  .div-more-stories {
+    margin-top: 15%;
+  }
+
+  .ul-more-stories {
+    display: block;
   }
 
   .ul-more-stories li {
     width: 100%;
+  }
+
+  .div-cat-img img {
+    width: 83.25vw;
+    height: 50.833vw;
   }
 
   .p-heading1-more {
