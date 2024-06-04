@@ -113,6 +113,8 @@ h1 {
   align-content: center;
   font-size: 1.314vw;
   transition: all 0.7s;
+  border: none;
+  cursor: pointer;
 }
 
 .show-me-now:hover {

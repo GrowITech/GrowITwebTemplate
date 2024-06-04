@@ -146,7 +146,7 @@ h2 {
 }
 
 .ul-title li:nth-child(1) {
-  width: 35%;
+  width: 43%;
   display: flex;
 }
 
@@ -182,16 +182,102 @@ h2 {
 
 .ul-agents {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
 .ul-agents > li {
   border: 1px solid #152c5b;
   border-radius: 20px;
-  padding: 25px;
+  padding: 20px;
+  text-align: -webkit-center;
+  width: 31.8%;
+  color: #b0b0b0;
+  font-size: 1.072vw;
 }
 
 .agents-img {
-  width: 239px;
-  height: 255px;
+  width: 16.597vw;
+  height: 17.708vw;
+}
+
+.agents-img img {
+  width: 100%;
+}
+
+.div-agent-name {
+  margin-top: 5%;
+}
+
+.agent-name {
+  color: #152c5b;
+  font-size: 1.612vw;
+}
+
+.ul-agent-details {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.ul-agent-details > li {
+  align-content: center;
+}
+
+.ul-agent-details > li:nth-child(1) {
+  padding-bottom: 15px;
+}
+
+.span-pink {
+  color: #ff498b;
+}
+
+.div-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* START: Pagination section */
+
+.sect-pagination {
+  margin-top: 3%;
+  text-align: center;
+}
+
+.ul-pagination {
+  display: inline-flex;
+  text-align: center;
+  color: #fff;
+}
+
+.f-page {
+  background-color: #152c5b;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-content: center;
+}
+
+.l-page {
+  color: #152c5b;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-content: center;
+}
+
+/* sample for toggle */
+#panel,
+#flip {
+  padding: 5px;
+  /* text-align: lef; */
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
 }

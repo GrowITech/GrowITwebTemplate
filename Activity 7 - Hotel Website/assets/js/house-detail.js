@@ -38,15 +38,38 @@ document.querySelector(".decrement").addEventListener("click", function () {
 });
 
 $(function () {
-  var range = $("#quantity2");
+  var range = $("#quantity");
   $("#popupDatepicker").datepicker({
     minDate: 1,
     showButtonPanel: true,
+    changeMonth: true,
+    changeYear: true,
   });
   $("#datepicker").click(function (e) {
     var visible = $("#popupDatepicker").datepicker("widget").is(":visible");
     $("#popupDatepicker").datepicker(visible ? "hide" : "show");
   });
+});
+
+$("#date").datepicker({
+  numberOfMonths: 2,
+  onSelect: function (selectedDate) {
+    if (!$(this).data().datepicker.first) {
+      $(this).data().datepicker.inline = true;
+      $(this).data().datepicker.first = selectedDate;
+    } else {
+      if (selectedDate > $(this).data().datepicker.first) {
+        $(this).val($(this).data().datepicker.first + " - " + selectedDate);
+      } else {
+        $(this).val(selectedDate + " - " + $(this).data().datepicker.first);
+      }
+      $(this).data().datepicker.inline = false;
+    }
+  },
+  onClose: function () {
+    delete $(this).data().datepicker.first;
+    $(this).data().datepicker.inline = false;
+  },
 });
 
 //Hamburger Nav
