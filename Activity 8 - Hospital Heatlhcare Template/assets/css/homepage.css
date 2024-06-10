@@ -21,8 +21,7 @@ a {
   text-decoration: none;
 }
 
-section,
-footer {
+section {
   margin: 0 10%;
 }
 
@@ -60,11 +59,22 @@ footer {
 .sub-ul-header {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .div-header-list {
   display: flex;
   gap: 15px;
+}
+
+/* **************Hide Section Responsive Tablet*********** */
+.show-responsive {
+  display: none;
+}
+
+.responsive-tablet {
+  text-align: center;
+  margin-bottom: 3%;
 }
 
 /* START: NAV Section */
@@ -147,6 +157,11 @@ footer {
   align-items: center;
 }
 
+.app-img img {
+  height: auto;
+  width: 100%;
+}
+
 /* START: Welcome Details Section */
 
 .sect-welcome-details {
@@ -183,6 +198,7 @@ footer {
 
 .sect-services {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .div-p-headings {
@@ -191,4 +207,475 @@ footer {
 
 .ul-services-list {
   margin-top: 5%;
+  display: flex;
+}
+
+.ul-services-list > li:nth-child(1) {
+  width: 50%;
+}
+
+.ul-services-list > li:nth-child(2) {
+  padding: 3%;
+}
+
+.ul-services-list > li:nth-child(3) {
+  width: 30%;
+}
+
+.ul-side-link {
+  text-align: center;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 10px;
+}
+
+#services-active {
+  background: #1f2b6c;
+  color: #bfd2f8;
+}
+
+.services-active > img {
+  filter: grayscale(40%);
+}
+
+.div-side-link {
+  padding: 24.5px;
+  color: #000000;
+}
+
+.div-side-link:hover {
+  background: #1f2b6c;
+  color: #bfd2f8;
+  filter: grayscale(40%);
+}
+
+.div-view-all {
+  width: 100%;
+  background-color: #1f2b6c;
+  color: #bfd2f8;
+  padding: 15px;
+}
+
+/* details section of services  */
+
+.p-heading-b {
+  font-size: 1.9rem;
+}
+
+.ul-cares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3% 0;
+  gap: 15px;
+}
+
+.ul-cares li {
+  padding: 2%;
+}
+
+.li-div-passions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.div-bullet {
+  height: 15px;
+  width: 15px;
+  background: #159eec;
+  border-radius: 50%;
+}
+
+/* details for the image section */
+
+.service-img {
+  width: 22.222vw;
+}
+
+.service-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* START: Specialties section */
+
+.sect-specialties {
+  margin-top: 10%;
+}
+
+.ul-specialties {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+.ul-specialties li {
+  padding: 25px;
+  height: 180px;
+  align-content: center;
+  text-align: -webkit-center;
+}
+
+.ul-specialties li:hover {
+  background: #1f2b6c;
+  color: #fff;
+}
+
+.img-container-specialty {
+  width: 55px;
+}
+
+.img-container-specialty img {
+  width: 100%;
+}
+
+/* START: Appointment Section */
+
+.sect-book-appointment {
+}
+
+.bg-appointment {
+  margin-top: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-image: url("/assets/images/appointment-bg-img.png");
+  background-repeat: no-repeat;
+}
+
+.ul-appointment {
+  display: flex;
+  align-items: center;
+}
+
+.ul-appointment li:nth-child(2) {
+  width: 100%;
+}
+
+.bold-sized {
+  font-size: 2rem;
+}
+
+.div-book-appointment {
+  padding: 0 100px;
+}
+
+.flex-appointment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #bfd2f8;
+}
+
+.flex-appointment > div {
+  border: 1px solid #bfd2f8;
+}
+
+.text-area {
+  height: 150px;
+}
+
+input {
+  background-color: #1f2b6c;
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #fff;
+  padding: 15px;
+  outline: none;
+}
+
+select {
+  background-color: #1f2b6c;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  padding: 15px;
+  outline: none;
+}
+
+select > option {
+  height: 150px;
+}
+
+.table-book-2 {
+  width: 100%;
+}
+
+textarea {
+  background-color: #1f2b6c;
+  width: 100%;
+  border: none;
+  height: 150px;
+  color: #fff;
+  padding: 15px;
+  resize: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+  font-family: "Work Sans", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+}
+
+.btn-submit {
+  background-color: #bfd2f8;
+  color: #1f2b6c;
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* START: Doctors Section */
+
+.sect-doctors {
+  margin-top: 5%;
+}
+
+.ul-doctors {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.div-img-doctor {
+  width: 22.014vw;
+  height: 24.306vw;
+}
+
+.div-img-doctor img {
+  width: 100%;
+  height: 100%;
+}
+
+.div-dr-details {
+  padding: 5%;
+  color: #1f2b6c;
+  background-color: #bfd2f8;
+}
+
+.p-dr-specialty {
+  font-weight: 800;
+  letter-spacing: 5px;
+}
+
+.div-socials {
+  display: inline-flex;
+  margin-top: 5%;
+  gap: 10px;
+}
+
+.view-profile {
+  background-color: #1f2b6c;
+  color: #fff;
+  padding: 5%;
+}
+
+/* START: News Section  */
+
+.sect-news {
+  margin-top: 10%;
+}
+
+.ul-news {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+}
+
+.div-news {
+  display: inline-flex;
+  align-items: center;
+}
+
+.div-img-news {
+  width: 12.111vw;
+  height: 155.002px;
+}
+
+.div-img-news img {
+  width: 100%;
+  height: 100%;
+}
+
+.div-news-details {
+  padding: 2% 10% 2% 2%;
+}
+
+.p-regular {
+  font-size: 1.1rem;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.div-reacts {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.sub-reacts {
+  display: inline-flex;
+  gap: 5px;
+}
+
+/* START: Contact Section */
+
+.sect-contact {
+  margin-top: 8%;
+}
+
+.ul-contact {
+  display: flex;
+  justify-content: space-between;
+  color: #1f2b6c;
+  margin-top: 5%;
+}
+
+.ul-contact > li {
+  background: #bfd2f8;
+  width: 24%;
+  padding: 4% 2%;
+  line-height: 1.8;
+}
+
+.ul-contact > li:hover {
+  background: #1f2b6c;
+  color: #bfd2f8;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+/* START: Footer Section */
+
+footer {
+  margin-top: 5%;
+  padding: 5% 10%;
+  background-color: #1f2b6c;
+  color: #fcfefe;
+}
+
+.ul-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-footer > li:nth-child(1) {
+  width: 20%;
+}
+
+.ul-footer > li:nth-child(4) {
+  width: 30%;
+}
+
+.footer-logo {
+  color: #bfd2f8;
+  font-size: 2rem;
+  font-family: Yeseva One;
+}
+
+.div-contact-details {
+  line-height: 25px;
+}
+
+.div-contact-details a {
+  color: #fcfefe;
+  text-decoration: none;
+}
+
+.bold-medium {
+  font-weight: 700;
+}
+
+.space1 {
+  margin-top: 10%;
+}
+
+.space2 {
+  margin-top: 25%;
+}
+
+.space3 {
+  margin-top: 14%;
+}
+
+.space4 {
+  margin-top: 12%;
+}
+
+.frm-newsletter {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-input {
+  background-color: #bfd2f8;
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #1f2b6c;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  flex-grow: 2;
+}
+
+.footer-input:focus {
+  outline: none;
+}
+
+.footer-input::placeholder {
+  color: #1f2b6c;
+  opacity: 1; /* Firefox */
+}
+
+.btn-submit-news {
+  height: 50px;
+  background: #bfd2f8;
+  outline: none;
+  border: none;
+  margin-top: 12%;
+  border-radius: 0 5px 5px 0;
+  padding-right: 10px;
+}
+
+hr {
+  margin: 5% 0;
+}
+
+.ul-footer-hr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-footer-hr {
+  display: flex;
+  gap: 15px;
+}
+
+/* *************************************************************************
+                         Responsive: TABLET 
+************************************************************************* */
+
+@media screen and (max-width: 768px) {
+  .show-responsive {
+    display: block;
+  }
+
+  .hide-desktop-r {
+    display: none;
+  }
 }
