@@ -66,6 +66,7 @@ section {
     background-color: #bfd2f8;
   }
 }
+
 /* START: Header-top Section */
 
 .sect-header-top {
@@ -97,6 +98,19 @@ section {
   color: #159eec;
 }
 
+.p-light.bold {
+  font-weight: 800;
+  font-size: 16px;
+  text-shadow: 2px 2px 3px rgb(180, 180, 180);
+}
+
+.p-blue.bolder {
+  font-weight: 800;
+  font-size: 26px;
+  margin: 1% 0;
+  font-family: "Yeseva One", sans-serif;
+}
+
 .sub-ul-header {
   display: flex;
   justify-content: space-between;
@@ -109,9 +123,9 @@ section {
 }
 
 /* **************Hide Section Responsive Tablet*********** */
-.show-responsive-header {
+/* .show-responsive-header {
   display: none;
-}
+} */
 
 .show-responsive {
   display: none;
@@ -122,8 +136,11 @@ section {
   margin-bottom: 3%;
 }
 
-/* START: NAV Section */
+.nav-display {
+  display: none;
+}
 
+/* START: NAV Section */
 .sect-nav {
   background: #1f2b6c;
   padding: 2% 0;
@@ -167,352 +184,25 @@ section {
   width: 100%;
 }
 
-/* START: DIV Appointment Section */
-.sect-div-appointment {
-  position: relative;
-}
-
-.div-main-appointment {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  position: absolute;
-  top: -50px;
-}
-
-.div-appointment {
-  background-color: #1f2b6c;
-  height: 100px;
-  width: 24.306vw;
-  color: #fff;
-  padding: 25px;
-}
-
-.div-appointment.grey {
-  background-color: #bfd2f8;
-  color: #000000;
-}
-
-.div-appointment.light {
-  background-color: #159eec;
-}
-
-.ul-div-appointment {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.app-img img {
-  height: auto;
-  width: 100%;
-}
-
-/* start: Hidden for Tablet/Mobile  */
-
 .div-respo-details {
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 30%;
   right: 15%;
-  left: 15%;
+  left: 10%;
   bottom: 15%;
 }
 
-.div-our-services {
-  background-color: #bfd2f8;
-  width: 150px;
-  height: 30px;
-  text-align: center;
-  align-content: center;
-  color: #1f2b6c;
-  border-radius: 50px;
-  border: none;
-}
-
-.div-our-services > a {
-  text-decoration: none;
-}
-
-.nav-display {
-  display: none;
-}
-
-/* START: Welcome Details Section */
-
-.sect-welcome-details {
-  margin-top: 8%;
-  margin: 8% 25%;
-  text-align: center;
-}
-
-.p-light.bold {
+.page-title {
+  font-size: 2rem;
   font-weight: 800;
-  font-size: 16px;
-  text-shadow: 2px 2px 3px rgb(180, 180, 180);
-}
-
-.p-blue.bolder {
-  font-weight: 800;
-  font-size: 26px;
-  margin: 1% 0;
   font-family: "Yeseva One", sans-serif;
 }
 
-.div-learn-more {
-  margin-top: 5%;
-  display: inline-flex;
-  gap: 15px;
-}
-
-/* START: Header Doctors IMG Section */
-
-.sect-doctors-img img {
-  width: 100%;
-}
-
-/* START: Services Section */
-
-.sect-services {
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
+/* Start: Headings per Section */
 
 .div-p-headings {
   text-align: center;
-}
-
-.ul-services-list {
-  margin-top: 5%;
-  display: flex;
-}
-
-.ul-services-list > li:nth-child(1) {
-  width: 50%;
-}
-
-.ul-services-list > li:nth-child(2) {
-  padding: 3%;
-}
-
-.ul-services-list > li:nth-child(3) {
-  width: 30%;
-}
-
-.ul-side-link {
-  text-align: center;
-  border: 1px solid rgb(185, 185, 185);
-  border-radius: 10px;
-}
-
-#services-active {
-  background: #1f2b6c;
-  color: #bfd2f8;
-}
-
-.services-active > img {
-  filter: grayscale(40%);
-}
-
-.div-side-link {
-  padding: 24.5px;
-  color: #000000;
-}
-
-.div-side-link:hover {
-  background: #1f2b6c;
-  color: #bfd2f8;
-  filter: grayscale(40%);
-}
-
-.div-view-all {
-  width: 100%;
-  background-color: #1f2b6c;
-  color: #bfd2f8;
-  padding: 15px;
-}
-
-/* details section of services  */
-
-.p-heading-b {
-  font-size: 1.9rem;
-}
-
-.ul-cares {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 3% 0;
-  gap: 15px;
-}
-
-.ul-cares li {
-  padding: 2%;
-}
-
-.li-div-passions {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.div-bullet {
-  height: 15px;
-  width: 15px;
-  background: #159eec;
-  border-radius: 50%;
-}
-
-/* details for the image section */
-
-.service-img {
-  width: 22.222vw;
-}
-
-.service-img img {
-  width: 100%;
-  height: auto;
-}
-
-/* START: Specialties section */
-
-.sect-specialties {
-  margin-top: 10%;
-}
-
-.ul-specialties {
-  margin-top: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.ul-specialties li {
-  flex: 1 0 21%;
-  padding: 25px;
-  height: 180px;
-  align-content: center;
-  text-align: -webkit-center;
-}
-
-.ul-specialties li:hover {
-  background: #1f2b6c;
-  color: #fff;
-}
-
-.img-container-specialty {
-  width: 50px;
-}
-
-.img-container-specialty img {
-  width: 100%;
-}
-
-/* START: Appointment Section */
-
-.sect-book-appointment {
-}
-
-.bg-appointment {
-  margin-top: 5%;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  background-image: url("/assets/images/appointment-bg-img.png");
-  background-repeat: no-repeat;
-}
-
-.ul-appointment {
-  display: flex;
-  align-items: center;
-}
-
-.ul-appointment li:nth-child(2) {
-  width: 100%;
-}
-
-.bold-sized {
-  font-size: 2rem;
-}
-
-.div-book-appointment {
-  padding: 0 6.944vw;
-  margin-bottom: 2%;
-}
-
-.flex-appointment {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-bottom: 1px solid #bfd2f8;
-}
-
-.flex-appointment > div {
-  border: 1px solid #bfd2f8;
-}
-
-.text-area {
-  height: 150px;
-}
-
-input {
-  background-color: #1f2b6c;
-  width: 100%;
-  border: none;
-  height: 50px;
-  color: #fff;
-  padding: 15px;
-  outline: none;
-}
-
-select {
-  background-color: #1f2b6c;
-  border: none;
-  width: 100%;
-  height: 50px;
-  color: #fff;
-  padding: 15px;
-  outline: none;
-}
-
-select > option {
-  height: 150px;
-}
-
-.table-book-2 {
-  width: 100%;
-}
-
-textarea {
-  background-color: #1f2b6c;
-  width: 100%;
-  border: none;
-  height: 150px;
-  color: #fff;
-  padding: 15px;
-  resize: none;
-  outline: none;
-}
-
-::placeholder {
-  color: #fff;
-  opacity: 1; /* Firefox */
-  font-family: "Work Sans", sans-serif;
-}
-
-::-ms-input-placeholder {
-  /* Edge 12-18 */
-  color: #fff;
-  font-family: "Work Sans", sans-serif;
-}
-
-.btn-submit {
-  background-color: #bfd2f8;
-  color: #1f2b6c;
-  width: 100%;
-  border: none;
-  outline: none;
-  height: 50px;
-  cursor: pointer;
-  font-family: "Work Sans", sans-serif;
 }
 
 /* START: Doctors Section */
@@ -745,6 +435,87 @@ hr {
   gap: 15px;
 }
 
+/* ********************************About Us Style******************************** */
+
+/* START: Welcome Section */
+
+.sect-welcome {
+  margin-top: 5%;
+}
+
+.ul-welcome {
+  display: flex;
+  gap: 2%;
+}
+
+.large-size {
+  font-size: 3.5rem;
+  font-family: "Yeseva One", sans-serif;
+}
+
+.ul-cares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3% 0;
+  gap: 15px;
+}
+
+.ul-cares li {
+  padding: 2%;
+}
+
+.li-div-passions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.div-bullet {
+  height: 15px;
+  width: 15px;
+  background: #159eec;
+  border-radius: 50%;
+}
+
+/* START: Testimonial Section */
+
+.sect-testimonial {
+  margin-top: 5%;
+  position: relative;
+  text-align: center;
+}
+
+.ul-testimonial {
+  margin-top: 3%;
+}
+
+.sect-testimonial > img {
+  width: 100%;
+}
+
+.section-testi-details {
+  position: absolute;
+  top: 15%;
+  bottom: 40%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  color: #fcfefe;
+}
+
+.section-testi-details hr {
+  width: 50%;
+  margin: auto;
+}
+
+.t-comment {
+  margin-bottom: 3%;
+}
+
+.t-name {
+  margin-top: 5%;
+}
+
 /* ************************ HAMBURGER MENU************************* */
 
 .navbar:nth-child(3) {
@@ -785,24 +556,16 @@ hr {
 /* *************************************************************************
                          Responsive: 1100px - TABLET 
 ************************************************************************* */
-@media screen and (max-width: 1100px) {
-  /* 1100px: Book Appointment Section */
 
+@media screen and (max-width: 1100px) {
   .hide-desktop-r-header {
     display: none;
   }
 
-  .ul-appointment {
-    display: block;
-  }
+  /* 1100px: Welcome Section */
 
-  .ul-appointment li:nth-child(2) {
-    width: 100%;
-    text-align: -webkit-center;
-  }
-
-  .frm-appointment {
-    width: 83%;
+  .welcome-li-to-hide {
+    display: none;
   }
 
   /* 1100px: Contact Section */
@@ -956,16 +719,14 @@ hr {
 
   /* END: HAMBURGER MENU */
 
-  .show-responsive {
-    display: block;
-  }
+  /* Tablet: Display Any Hidden Elements for Tablet Responsive */
 
-  .show-responsive-header {
-    display: block;
-  }
-
-  .hide-desktop-r {
+  .nav-hide {
     display: none;
+  }
+
+  .nav-display {
+    display: block;
   }
 
   /* Tablet: Head Section */
@@ -1024,13 +785,30 @@ hr {
     color: #bfd2f8;
   }
 
-  /* TABLET: Book Appointment Section */
+  /* TABLET: Testimonial Section */
 
-  .bg-appointment {
-    padding-top: 2%;
+  .section-testi-details {
+    top: 3%;
+    bottom: 40%;
+    left: 0%;
+    right: 0%;
+    font-size: 1.953vw;
+  }
+
+  .section-testi-details img {
+    width: 5.859vw;
+  }
+
+  /* TABLET: Doctors Section */
+  .sect-doctors {
+    margin-top: 15%;
   }
 
   /* TABLET: News Section */
+
+  .sect-news {
+    margin-top: 15%;
+  }
 
   .ul-news {
     grid-template-columns: repeat(1, 1fr);
@@ -1038,6 +816,12 @@ hr {
 
   .div-img-news {
     width: 23.111vw;
+  }
+
+  /* TABLET: Contact Section */
+
+  .sect-contact {
+    margin-top: 15%;
   }
 
   /* TABLET: Footer Section */
@@ -1105,6 +889,10 @@ hr {
     font-size: 3.191vw;
   }
 
+  .page-title {
+    font-size: 7.447vw;
+  }
+
   .div-respo-details {
     top: 15%;
   }
@@ -1121,56 +909,11 @@ hr {
     font-size: 5.319vw;
   }
 
-  /* Mobile: Services Section */
-
-  .ul-services-list > li:nth-child(2) {
-    display: none;
+  .large-size {
+    font-size: 11.702vw;
   }
 
-  .ul-services-list > li:nth-child(1) {
+  .ul-contact li {
     width: 100%;
-  }
-
-  .ul-side-link {
-    border-radius: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .li-viewall {
-    width: 200%;
-  }
-
-  /* Mobile: Book an Appointment section */
-
-  .div-book-appointment {
-    padding: 0;
-  }
-
-  .frm-appointment {
-    width: 100%;
-  }
-
-  /* Mobile: Doctors Section */
-
-  .sect-doctors {
-    margin-top: 15%;
-  }
-
-  /* Mobile: News Section */
-
-  .sect-news {
-    margin-top: 25%;
-  }
-
-  /* Mobile: Contact Section */
-
-  .sect-contact {
-    margin-top: 35%;
-  }
-
-  .ul-contact {
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
   }
 }

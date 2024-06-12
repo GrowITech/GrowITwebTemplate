@@ -33,9 +33,34 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 //End: Hamburger Nav
 
 $(document).ready(function () {
+  $(".ul-testimonial").slick({
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 1,
+    dots: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerPadding: "40px",
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
+
   $(".ul-doctors").slick({
     infinite: true,
-    centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
     dots: true,
@@ -92,23 +117,3 @@ $(document).ready(function () {
     ],
   });
 });
-
-$(window).on("hashchange", function () {
-  $("div.tab").hide();
-  $(location.hash).fadeIn("slow");
-});
-
-$("a.hash").on("click", function (e) {
-  e.preventDefault();
-  location.hash = $(this).data("hash");
-});
-
-$(".li-contact-1").hover(
-  function () {
-    $(this).find("img").attr("src", "assets/images/img-loc.png");
-  },
-
-  function () {
-    $(this).find("img").attr("src", "assets/images/img-loc-active.png");
-  }
-);
