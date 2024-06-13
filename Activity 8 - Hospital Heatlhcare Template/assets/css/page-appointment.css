@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin: 0 10%;
+}
+
+/* slick-slider-gap */
+.slick-slide {
+  margin: 0 27px;
+}
+
+/* ---start: slick dots--- */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+
+  li {
+    top: 3.472vw;
+    margin: 0 0.25rem;
+  }
+
+  button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+
+    border: none;
+    border-radius: 100%;
+    background-color: #636ead;
+
+    text-indent: -9999px;
+  }
+
+  li.slick-active button {
+    background-color: #1f2b6c;
+  }
+
+  li button {
+    background-color: #bfd2f8;
+  }
+}
+
+/* START: Header-top Section */
+
+.sect-header-top {
+  margin: 1% 10%;
+}
+
+.ul-header {
+  display: flex;
+}
+
+.ul-header > li:nth-child(1) {
+  width: 40%;
+}
+
+.ul-header > li:nth-child(2) {
+  width: 60%;
+}
+
+.div-logo {
+  font-size: 2rem;
+  font-family: "Yeseva One", serif;
+}
+
+.p-blue {
+  color: #1f2b6c;
+}
+
+.p-light {
+  color: #159eec;
+}
+
+.p-light.bold {
+  font-weight: 800;
+  font-size: 16px;
+  text-shadow: 2px 2px 3px rgb(180, 180, 180);
+}
+
+.p-blue.bolder {
+  font-weight: 800;
+  font-size: 26px;
+  margin: 1% 0;
+  font-family: "Yeseva One", sans-serif;
+}
+
+.sub-ul-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.div-header-list {
+  display: flex;
+  gap: 15px;
+}
+
+/* **************Hide Section Responsive Tablet*********** */
+/* .show-responsive-header {
+  display: none;
+} */
+
+.show-responsive {
+  display: none;
+}
+
+.responsive-tablet {
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.nav-display {
+  display: none;
+}
+
+/* START: NAV Section */
+.sect-nav {
+  background: #1f2b6c;
+  padding: 2% 0;
+}
+
+.ul-nav-list {
+  display: flex;
+  margin: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul-main-nav {
+  display: flex;
+  gap: 2.083vw;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.btn-appointment {
+  height: 40px;
+  width: 150px;
+  background: #e5e5e5;
+  color: #1f2b6c;
+  border-radius: 20px;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+/* START: Header IMG Section */
+
+.sect-img-header {
+  margin: 0;
+  position: relative;
+}
+
+.sect-img-header img {
+  width: 100%;
+}
+
+.div-respo-details {
+  text-align: left;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  left: 10%;
+  bottom: 15%;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Yeseva One", sans-serif;
+}
+
+/* Start: Headings per Section */
+
+.div-p-headings {
+  text-align: center;
+}
+
+/* START: Contact Section */
+
+.sect-contact {
+  margin-top: 8%;
+}
+
+.ul-contact {
+  display: flex;
+  justify-content: space-between;
+  color: #1f2b6c;
+  margin-top: 5%;
+}
+
+.ul-contact > li {
+  background: #bfd2f8;
+  width: 24%;
+  padding: 4% 2%;
+  line-height: 1.8;
+}
+
+.ul-contact > li:hover {
+  background: #1f2b6c;
+  color: #bfd2f8;
+}
+
+.bolder {
+  font-weight: 800;
+}
+
+/* START: Footer Section */
+
+footer {
+  margin-top: 5%;
+  padding: 5% 10%;
+  background-color: #1f2b6c;
+  color: #fcfefe;
+}
+
+.ul-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul-footer > li:nth-child(1) {
+  width: 20%;
+}
+
+.ul-footer > li:nth-child(4) {
+  width: 30%;
+}
+
+.footer-logo {
+  color: #bfd2f8;
+  font-size: 2rem;
+  font-family: Yeseva One;
+}
+
+.div-contact-details {
+  line-height: 25px;
+}
+
+.div-contact-details a {
+  color: #fcfefe;
+  text-decoration: none;
+}
+
+.bold-medium {
+  font-weight: 700;
+}
+
+.space1 {
+  margin-top: 10%;
+}
+
+.space2 {
+  margin-top: 25%;
+}
+
+.space3 {
+  margin-top: 14%;
+}
+
+.space4 {
+  margin-top: 12%;
+}
+
+.frm-newsletter {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-input {
+  background-color: #bfd2f8;
+  width: 100%;
+  border: none;
+  height: 50px;
+  color: #1f2b6c;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  flex-grow: 2;
+}
+
+.footer-input:focus {
+  outline: none;
+}
+
+.footer-input::placeholder {
+  color: #1f2b6c;
+  opacity: 1; /* Firefox */
+}
+
+.btn-submit-news {
+  height: 50px;
+  background: #bfd2f8;
+  outline: none;
+  border: none;
+  margin-top: 12%;
+  border-radius: 0 5px 5px 0;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 5% 0;
+}
+
+.ul-footer-hr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-footer-hr {
+  display: flex;
+  gap: 15px;
+}
+
+/* ********************************Start Service page Style******************************** */
