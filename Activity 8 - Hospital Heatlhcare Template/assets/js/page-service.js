@@ -35,7 +35,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 $(document).ready(function () {
   $(".ul-doctors").slick({
     infinite: true,
-    centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
     dots: true,
@@ -44,16 +43,14 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
         },

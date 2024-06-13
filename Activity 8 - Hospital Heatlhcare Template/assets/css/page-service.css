@@ -761,12 +761,20 @@ hr {
   }
 
   .ul-side-link {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    justify-content: center;
+  }
+
+  .div-side-link {
+    height: 100%;
+    padding: 17.5px;
   }
 
   .ul-side-link li {
-    width: 16%;
+    width: 100%;
+    height: auto;
   }
 
   .ul-services-list > li:nth-child(1) {
@@ -870,5 +878,22 @@ hr {
 
   .ul-contact li {
     width: 100%;
+  }
+
+  /* Mobile: Cares for Service Page section */
+
+  .sect-doctors {
+    margin-top: 18%;
+  }
+
+  .sect-contact {
+    margin-top: 18%;
+  }
+
+  .ul-cares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3% 0;
+    gap: 15px;
   }
 }
