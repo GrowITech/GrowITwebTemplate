@@ -56,7 +56,6 @@ $(document).ready(function () {
           centerPadding: "40px",
           slidesToShow: 1,
           rows: 1,
-          variableWidth: true,
         },
       },
     ],

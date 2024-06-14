@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1150,6 +1151,10 @@ hr {
 
   .frm-appointment {
     width: 100%;
+  }
+
+  .flex-appointment {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   /* Mobile: Doctors Section */

@@ -97,7 +97,6 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
           variableWidth: true,
@@ -107,11 +106,9 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
           rows: 1,
-          variableWidth: true,
         },
       },
     ],

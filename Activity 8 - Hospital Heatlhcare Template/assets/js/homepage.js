@@ -35,7 +35,6 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 $(document).ready(function () {
   $(".ul-doctors").slick({
     infinite: true,
-    centerMode: true,
     centerPadding: "60px",
     slidesToShow: 3,
     dots: true,
@@ -44,9 +43,8 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {
@@ -72,7 +70,6 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
           variableWidth: true,
@@ -82,11 +79,9 @@ $(document).ready(function () {
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
           rows: 1,
-          variableWidth: true,
         },
       },
     ],
@@ -103,12 +98,44 @@ $("a.hash").on("click", function (e) {
   location.hash = $(this).data("hash");
 });
 
+// CONTACT HOVER SECTION
+
 $(".li-contact-1").hover(
   function () {
-    $(this).find("img").attr("src", "assets/images/img-loc.png");
+    $(this).find("img").attr("src", "assets/images/img-call-active.png");
   },
 
   function () {
+    $(this).find("img").attr("src", "assets/images/img-call.png");
+  }
+);
+
+$(".li-contact-2").hover(
+  function () {
     $(this).find("img").attr("src", "assets/images/img-loc-active.png");
+  },
+
+  function () {
+    $(this).find("img").attr("src", "assets/images/img-loc.png");
+  }
+);
+
+$(".li-contact-3").hover(
+  function () {
+    $(this).find("img").attr("src", "assets/images/img-mail-active.png");
+  },
+
+  function () {
+    $(this).find("img").attr("src", "assets/images/img-mail.png");
+  }
+);
+
+$(".li-contact-4").hover(
+  function () {
+    $(this).find("img").attr("src", "assets/images/img-clock-active.png");
+  },
+
+  function () {
+    $(this).find("img").attr("src", "assets/images/img-clock.png");
   }
 );

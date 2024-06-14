@@ -171,6 +171,7 @@ section {
   border: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* START: Header IMG Section */
