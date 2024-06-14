@@ -113,4 +113,46 @@ $(document).ready(function () {
       },
     ],
   });
+
+  // CONTACT HOVER SECTION
+
+  $(".li-contact-1").hover(
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-call-active.png");
+    },
+
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-call.png");
+    }
+  );
+
+  $(".li-contact-2").hover(
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-loc-active.png");
+    },
+
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-loc.png");
+    }
+  );
+
+  $(".li-contact-3").hover(
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-mail-active.png");
+    },
+
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-mail.png");
+    }
+  );
+
+  $(".li-contact-4").hover(
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-clock-active.png");
+    },
+
+    function () {
+      $(this).find("img").attr("src", "assets/images/img-clock.png");
+    }
+  );
 });
