@@ -835,6 +835,11 @@ textarea {
                          Responsive: 600 - PX
 ************************************************************************* */
 @media screen and (max-width: 600px) {
+  .ul-contact {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+
   .flex-input {
     display: block;
   }
