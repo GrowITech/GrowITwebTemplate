@@ -835,6 +835,10 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
   body {
     font-size: 3.191vw;
   }
@@ -869,6 +873,10 @@ hr {
 
   /* ~~~~Mobile: Doctors Section */
 
+  .sect-doctors {
+    margin-top: 15%;
+  }
+
   .ul-doctors {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -885,5 +893,10 @@ hr {
 
   .div-news-details {
     padding: 2% 2% 2% 2%;
+  }
+
+  /* Mobile: Footer  */
+  footer {
+    margin-top: 15%;
   }
 }

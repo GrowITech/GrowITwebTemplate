@@ -1109,8 +1109,20 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
+  .sect-welcome-details {
+    margin: 15% 25%;
+  }
+
   body {
     font-size: 3.191vw;
+  }
+
+  footer {
+    margin-top: 15%;
   }
 
   .div-respo-details {
@@ -1131,6 +1143,10 @@ hr {
 
   /* Mobile: Services Section */
 
+  .sect-services {
+    margin-top: 15%;
+  }
+
   .ul-services-list > li:nth-child(2) {
     display: none;
   }
@@ -1147,6 +1163,12 @@ hr {
 
   .li-viewall {
     width: 200%;
+  }
+
+  /* Mobile: Specialties */
+
+  .sect-specialties {
+    margin-top: 15%;
   }
 
   /* Mobile: Book an Appointment section */
@@ -1186,7 +1208,7 @@ hr {
   /* Mobile: Contact Section */
 
   .sect-contact {
-    margin-top: 35%;
+    margin-top: 25%;
   }
 
   .ul-contact {

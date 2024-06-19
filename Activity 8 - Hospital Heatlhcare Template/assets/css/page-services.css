@@ -711,6 +711,10 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
   body {
     font-size: 3.191vw;
   }
@@ -745,7 +749,16 @@ hr {
 
   /* Mobile: Services Section */
 
+  .ul-services {
+    margin-top: 15%;
+  }
+
   .size-up {
     font-size: 6.383vw;
+  }
+
+  /* Mobile: Footer  */
+  footer {
+    margin-top: 15%;
   }
 }

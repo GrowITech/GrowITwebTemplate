@@ -888,10 +888,19 @@ textarea {
     width: 100%;
   }
 
+  .sect-map img {
+    margin-top: 15%;
+  }
+
+  /* Mobie: Contct Section */
+  .sect-contact {
+    margin-top: 15%;
+  }
+
   /* Mobile: News Section */
 
   .sect-news {
-    margin-top: 25%;
+    margin-top: 15%;
   }
 
   .div-img-news {
@@ -900,5 +909,10 @@ textarea {
 
   .div-news-details {
     padding: 2% 2% 2% 2%;
+  }
+
+  /* Mobile: Footer  */
+  footer {
+    margin-top: 15%;
   }
 }

@@ -886,6 +886,10 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
   body {
     font-size: 3.191vw;
   }
@@ -918,6 +922,16 @@ hr {
     width: 100%;
   }
 
+  /* Mobile: Welcome Section */
+  .sect-welcome {
+    margin-top: 15%;
+  }
+
+  /* Mobile: Testimonial Section */
+  .sect-testimonial {
+    margin-top: 15%;
+  }
+
   /* Mobile: News Section */
 
   .sect-news {
@@ -930,5 +944,10 @@ hr {
 
   .div-news-details {
     padding: 2% 2% 2% 2%;
+  }
+
+  /* Mobile: Footer  */
+  footer {
+    margin-top: 15%;
   }
 }

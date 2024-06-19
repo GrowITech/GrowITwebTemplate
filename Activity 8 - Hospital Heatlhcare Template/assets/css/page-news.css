@@ -843,6 +843,10 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
   body {
     font-size: 3.191vw;
   }
@@ -877,6 +881,10 @@ hr {
 
   /* ~~~Mobile: Blog Details */
 
+  .sect-news {
+    margin-top: 15%;
+  }
+
   .ul-info {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -886,5 +894,15 @@ hr {
     font-size: 3.191vw;
     height: 6.383vw;
     width: 31.915vw;
+  }
+
+  /* Mobile: Contact Section */
+  .sect-contact {
+    margin-top: 15%;
+  }
+
+  /* Mobile: Footer  */
+  footer {
+    margin-top: 15%;
   }
 }
