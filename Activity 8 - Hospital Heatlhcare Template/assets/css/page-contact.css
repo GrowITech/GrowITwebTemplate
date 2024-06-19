@@ -171,6 +171,7 @@ section {
   border: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* START: Header IMG Section */
@@ -761,6 +762,7 @@ textarea {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .ul-nav-responsive {
@@ -835,10 +837,10 @@ textarea {
                          Responsive: 600 - PX
 ************************************************************************* */
 @media screen and (max-width: 600px) {
-  .ul-contact {
+  /* .ul-contact {
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
-  }
+  } */
 
   .flex-input {
     display: block;

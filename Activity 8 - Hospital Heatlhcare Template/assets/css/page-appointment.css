@@ -171,6 +171,7 @@ section {
   border: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  cursor: pointer;
 }
 
 /* START: Header IMG Section */
@@ -739,6 +740,7 @@ textarea {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     font-size: 20px;
+    cursor: pointer;
   }
 
   .ul-nav-responsive {
