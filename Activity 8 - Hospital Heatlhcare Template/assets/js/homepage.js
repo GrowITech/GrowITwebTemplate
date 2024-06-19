@@ -88,6 +88,8 @@ $(document).ready(function () {
   });
 });
 
+// SERVICES SINGLE LINK SELECTION
+
 $(window).on("hashchange", function () {
   $("div.tab").hide();
   $(location.hash).fadeIn("slow");
@@ -96,6 +98,14 @@ $(window).on("hashchange", function () {
 $("a.hash").on("click", function (e) {
   e.preventDefault();
   location.hash = $(this).data("hash");
+});
+
+// Highlight link when it's Active
+
+$(".ul-side-link li a").on("click", function () {
+  var activeLink = $(".services-active");
+  activeLink.removeClass("services-active");
+  $(this).parent().addClass("services-active");
 });
 
 // CONTACT HOVER SECTION

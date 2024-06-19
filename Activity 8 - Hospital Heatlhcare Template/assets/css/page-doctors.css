@@ -872,4 +872,18 @@ hr {
   .ul-doctors {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* Mobile: News Section */
+
+  .sect-news {
+    margin-top: 25%;
+  }
+
+  .div-img-news {
+    width: 100%;
+  }
+
+  .div-news-details {
+    padding: 2% 2% 2% 2%;
+  }
 }

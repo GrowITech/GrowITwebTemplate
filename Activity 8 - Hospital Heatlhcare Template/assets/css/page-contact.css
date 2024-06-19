@@ -887,4 +887,18 @@ textarea {
   .ul-contact li {
     width: 100%;
   }
+
+  /* Mobile: News Section */
+
+  .sect-news {
+    margin-top: 25%;
+  }
+
+  .div-img-news {
+    width: 100%;
+  }
+
+  .div-news-details {
+    padding: 2% 2% 2% 2%;
+  }
 }

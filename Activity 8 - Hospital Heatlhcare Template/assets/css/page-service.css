@@ -371,7 +371,7 @@ hr {
   border-radius: 10px;
 }
 
-#services-active {
+.services-active {
   background: #1f2b6c;
   color: #bfd2f8;
 }
@@ -436,6 +436,10 @@ hr {
   width: 15px;
   background: #159eec;
   border-radius: 50%;
+}
+
+.hidden {
+  display: none;
 }
 
 /* details for the image section */

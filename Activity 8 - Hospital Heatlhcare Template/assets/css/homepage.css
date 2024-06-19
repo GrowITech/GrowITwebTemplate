@@ -26,6 +26,8 @@ section {
   margin: 0 10%;
 }
 
+/* SLICK SLIDER CUSTOM CSS FOR DOTS */
+
 /* slick-slider-gap */
 .slick-slide {
   margin: 0 27px;
@@ -308,7 +310,7 @@ section {
   border-radius: 10px;
 }
 
-#services-active {
+.services-active {
   background: #1f2b6c;
   color: #bfd2f8;
 }
@@ -363,6 +365,10 @@ section {
   width: 15px;
   background: #159eec;
   border-radius: 50%;
+}
+
+.hidden {
+  display: none;
 }
 
 /* details for the image section */
@@ -1167,6 +1173,14 @@ hr {
 
   .sect-news {
     margin-top: 25%;
+  }
+
+  .div-img-news {
+    width: 100%;
+  }
+
+  .div-news-details {
+    padding: 2% 2% 2% 2%;
   }
 
   /* Mobile: Contact Section */
