@@ -475,6 +475,14 @@ input {
   outline: none;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input[type="date"] {
+  font-family: "Work Sans", sans-serif;
+}
+
 select {
   background-color: #1f2b6c;
   border: none;
