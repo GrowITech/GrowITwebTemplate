@@ -360,6 +360,7 @@ hr {
 
 .div-img-service {
   height: 278px;
+  position: relative;
 }
 
 .div-img-service img {
@@ -382,6 +383,36 @@ hr {
 
 .service-detail {
   margin-bottom: 5%;
+}
+
+/* image-hover */
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.div-img-service:hover .overlay {
+  height: 100%;
+}
+
+.overlay-hide {
+  position: absolute;
+  height: 5.544vw;
+  width: 5.544vw;
+  right: 5%;
+  bottom: -2.778vw;
+  transition: transform 0.5s ease;
+}
+
+.div-img-service:hover .overlay-hide {
+  transform: scale(0);
 }
 
 /* ************************ HAMBURGER MENU************************* */
@@ -701,6 +732,14 @@ hr {
   .div-footer-hr {
     margin-bottom: 20%;
   }
+
+  /* Tablet: Services Section */
+
+  .overlay-hide {
+    height: 10.395vw;
+    width: 10.395vw;
+    bottom: -4.778vw;
+  }
 }
 
 /* *************************************************************************
@@ -757,6 +796,12 @@ hr {
 
   .ul-services {
     margin-top: 15%;
+  }
+
+  .overlay-hide {
+    height: 13.986vw;
+    width: 13.986vw;
+    bottom: -5.778vw;
   }
 
   .size-up {
