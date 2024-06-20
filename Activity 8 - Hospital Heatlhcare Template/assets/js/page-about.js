@@ -69,9 +69,9 @@ $(document).ready(function () {
         breakpoint: 769,
         settings: {
           arrows: false,
-          centerMode: true,
+          centerMode: false,
           centerPadding: "40px",
-          slidesToShow: 1,
+          slidesToShow: 2,
         },
       },
       {

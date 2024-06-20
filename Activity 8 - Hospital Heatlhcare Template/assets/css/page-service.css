@@ -377,6 +377,10 @@ hr {
   color: #bfd2f8;
 }
 
+.services-active p {
+  color: #bfd2f8;
+}
+
 .services-active > img {
   filter: grayscale(40%);
 }
@@ -405,8 +409,13 @@ hr {
   margin-top: 3%;
 }
 
+.div-care-img {
+  height: 36.722vw;
+}
+
 .div-care-img img {
   width: 100%;
+  height: 100%;
 }
 
 .p-heading-b {

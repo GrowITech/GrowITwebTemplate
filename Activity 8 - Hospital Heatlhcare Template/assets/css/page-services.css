@@ -358,8 +358,13 @@ hr {
   border-radius: 5px;
 }
 
+.div-img-service {
+  height: 278px;
+}
+
 .div-img-service img {
   width: 100%;
+  height: 100%;
 }
 
 .size-up {
@@ -756,6 +761,10 @@ hr {
 
   .size-up {
     font-size: 6.383vw;
+  }
+
+  .div-img-service {
+    height: 59.149vw;
   }
 
   /* Mobile: Footer  */

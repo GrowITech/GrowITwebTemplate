@@ -219,10 +219,9 @@ section {
   text-align: center;
 }
 
-/* .div-img-doctor {
-  width: 22.014vw;
-  height: 24.306vw;
-} */
+.div-img-doctor {
+  height: 350px;
+}
 
 .div-img-doctor img {
   width: 100%;

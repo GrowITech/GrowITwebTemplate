@@ -871,8 +871,25 @@ hr {
                          Responsive: 470 - MOBILE
 ************************************************************************* */
 @media screen and (max-width: 470px) {
+  .sect-nav {
+    padding: 4% 0;
+  }
+
   body {
     font-size: 3.191vw;
+  }
+
+  footer {
+    margin-top: 15%;
+  }
+
+  .div-img-info {
+    align-content: center;
+    width: 3.83vw;
+  }
+
+  .div-img-info img {
+    width: 100%;
   }
 
   .page-title {
@@ -905,6 +922,10 @@ hr {
 
   /* ~~~Mobile: Blog Details */
 
+  .sect-news {
+    margin-top: 15%;
+  }
+
   .ul-info {
     display: flex;
     gap: 0;
@@ -915,5 +936,11 @@ hr {
     font-size: 3.191vw;
     height: 6.383vw;
     width: 31.915vw;
+  }
+
+  /* Mobile: Contact Section */
+
+  .sect-contact {
+    margin-top: 15%;
   }
 }

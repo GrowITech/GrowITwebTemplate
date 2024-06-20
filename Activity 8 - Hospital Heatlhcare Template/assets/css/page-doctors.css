@@ -359,6 +359,10 @@ hr {
   gap: 25px;
 }
 
+.div-img-doctor {
+  height: 350px;
+}
+
 .div-img-doctor img {
   width: 100%;
   height: 100%;
