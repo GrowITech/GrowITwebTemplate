@@ -768,6 +768,12 @@ hr {
     color: #bfd2f8;
   }
 
+  /* TABLET: Slick Slide Margin Property */
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+
   /* TABLET: Free Checkup Care Section */
 
   .ul-services-list {
@@ -896,6 +902,12 @@ hr {
 
   .ul-contact li {
     width: 100%;
+  }
+
+  /* MObile: Slick Slide Margin Property */
+
+  .slick-slide {
+    margin: 0 10px;
   }
 
   /* Mobile: Cares for Service Page section */

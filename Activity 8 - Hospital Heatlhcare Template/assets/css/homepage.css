@@ -1056,6 +1056,12 @@ hr {
     padding-top: 2%;
   }
 
+  /* Tablet: Slick Slide Margin Property */
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+
   /* TABLET: News Section */
 
   .ul-news {
@@ -1159,6 +1165,10 @@ hr {
     font-size: 5.319vw;
   }
 
+  .slick-slide {
+    margin: 0 10px;
+  }
+
   /* Mobile: Services Section */
 
   .sect-services {
@@ -1214,7 +1224,7 @@ hr {
   }
 
   .div-img-doctor {
-    height: 74.468vw;
+    height: 350px;
   }
 
   /* Mobile: News Section */

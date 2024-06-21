@@ -205,40 +205,42 @@
                 <button class="plus increment">+</button>
               </div>
               <p class="p-blue-t">Pick a Date</p>
-              <div class="date-picker">
-                <div class="div-d-picker">
-                  <img
-                    id="datepicker"
-                    src="assets/images/ic_calendar.png"
-                    alt=""
-                  />
+              <form action="booking-process.html">
+                <div class="date-picker">
+                  <div class="div-d-picker">
+                    <img
+                      id="datepicker"
+                      src="assets/images/ic_calendar.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="picked-date">
+                    <input
+                      type="text"
+                      id="popupDatepicker"
+                      placeholder="20 Jan - 22 Jan"
+                    />
+                    <input type="text" id="date" />
+                  </div>
                 </div>
-                <div class="picked-date">
-                  <input
-                    type="text"
-                    id="popupDatepicker"
-                    placeholder="20 Jan - 22 Jan"
-                  />
-                  <input type="text" id="date" />
+                <div class="div-total">
+                  <p>You will pay</p>
+                  &nbsp;
+                  <p class="p-blue-t bold">
+                    $<span id="total-price">280</span> USD
+                  </p>
+                  &nbsp;
+                  <p>per</p>
+                  &nbsp;
+                  <p class="p-blue-t bold">
+                    <span id="quantity2">1</span>
+                    <span class="num-nights">night</span>
+                  </p>
                 </div>
-              </div>
-              <div class="div-total">
-                <p>You will pay</p>
-                &nbsp;
-                <p class="p-blue-t bold">
-                  $<span id="total-price">280</span> USD
-                </p>
-                &nbsp;
-                <p>per</p>
-                &nbsp;
-                <p class="p-blue-t bold">
-                  <span id="quantity2">1</span>
-                  <span class="num-nights">night</span>
-                </p>
-              </div>
-              <button class="btn-book-now" type="submit">
-                Continue to Book
-              </button>
+                <button class="btn-book-now" type="submit">
+                  Continue to Book
+                </button>
+              </form>
             </div>
           </li>
         </ul>

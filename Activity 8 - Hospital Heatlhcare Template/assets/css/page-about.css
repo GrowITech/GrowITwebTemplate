@@ -748,6 +748,12 @@ hr {
     justify-content: center;
   }
 
+  /* Tablet: Slick Slide Margin Property */
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+
   /* Tablet: Nav Section  */
 
   .nav-display {
@@ -924,6 +930,12 @@ hr {
   /* Mobile: Welcome Section */
   .sect-welcome {
     margin-top: 15%;
+  }
+
+  /* MObile: Slick Slide Margin Property */
+
+  .slick-slide {
+    margin: 0 10px;
   }
 
   /* Mobile: Testimonial Section */
