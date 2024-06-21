@@ -353,9 +353,8 @@ hr {
 
 /* ********************************Start Contact page Style******************************** */
 
-.sect-map img {
+.sect-map {
   margin-top: 5%;
-  width: 100%;
 }
 
 /* START: Contact Section */
@@ -900,6 +899,11 @@ textarea {
   }
 
   /* Mobie: Contct Section */
+
+  .sect-map {
+    margin-top: 15%;
+  }
+
   .sect-contact {
     margin-top: 15%;
   }

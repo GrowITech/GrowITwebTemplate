@@ -216,11 +216,11 @@ section {
 /* start: Hidden for Tablet/Mobile  */
 
 .div-respo-details {
-  text-align: center;
+  text-align: left;
   position: absolute;
   top: 30%;
   right: 15%;
-  left: 15%;
+  left: 12%;
   bottom: 15%;
 }
 
@@ -233,6 +233,7 @@ section {
   color: #1f2b6c;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
 }
 
 .div-our-services > a {
@@ -262,6 +263,10 @@ section {
   font-size: 26px;
   margin: 1% 0;
   font-family: "Yeseva One", sans-serif;
+}
+
+.p-blue.bolder.upsized {
+  font-size: 36px;
 }
 
 .div-learn-more {
@@ -564,9 +569,14 @@ textarea {
   background-color: #bfd2f8;
 }
 
+.p-dr-name {
+  color: #1f2b6c;
+}
+
 .p-dr-specialty {
   font-weight: 800;
   letter-spacing: 5px;
+  color: #1f2b6c;
 }
 
 .div-socials {
@@ -1050,6 +1060,12 @@ hr {
     color: #bfd2f8;
   }
 
+  /* TABLET: Head Img Section */
+
+  .p-blue.bolder.upsized {
+    font-size: 4.688vw;
+  }
+
   /* TABLET: Book Appointment Section */
 
   .bg-appointment {
@@ -1150,6 +1166,7 @@ hr {
   }
 
   .div-respo-details {
+    text-align: center;
     top: 15%;
   }
 

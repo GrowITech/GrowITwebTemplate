@@ -38,6 +38,9 @@ $(document).ready(function () {
     centerPadding: "60px",
     slidesToShow: 1,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 5000,
     arrows: false,
     responsive: [
       {
@@ -64,6 +67,9 @@ $(document).ready(function () {
     centerPadding: "60px",
     slidesToShow: 3,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 5000,
     responsive: [
       {
         breakpoint: 769,
@@ -90,6 +96,9 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 2,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 5000,
     centerPadding: "40px",
     rows: 2,
     responsive: [

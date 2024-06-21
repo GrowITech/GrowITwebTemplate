@@ -38,6 +38,9 @@ $(document).ready(function () {
     centerPadding: "60px",
     slidesToShow: 3,
     dots: true,
+    autoplay: true,
+    autoplaySpeed: 1,
+    speed: 5000,
     responsive: [
       {
         breakpoint: 769,
